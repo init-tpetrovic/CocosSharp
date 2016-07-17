@@ -10,8 +10,8 @@ title: CocosSharp
 description: > # this means to ignore newlines until "baseurl:"
   CocosSharp is a easy to use cross-platform games and visualisation library for C# and F#. 
   It is a .NET port of the popular Cocos2D engine and is powered by MonoGame.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://mono.github.com/CocosSharp" # the base hostname & protocol for your site
+baseurl: "/CocosSharp" # the subpath of your site, e.g. /blog
+url: "http://mono.github.com" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
