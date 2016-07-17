@@ -1,0 +1,39 @@
+<started>
+    <div class="wrapper">
+        <div class="row ">
+            <div class="col-lg-12">
+                <h2>Contribute</h2>
+            </div>
+
+            {% assign count = 1 %}
+            {% for step in site.data.contribute.steps %}
+            <div class="steps col-sm-4 col-lg-4">
+                <div>
+                    <h2><span class="number">{{ count }}</span></h2>
+                    <h4>{{ step.title }}</h4>
+                    <p>{{ step.description }}</p>
+                </div>
+            </div>
+            {% assign count = count | plus: 1 %}
+            {% endfor %}
+        </div>
+    </div>
+    <hr />
+
+    <div class="row ">
+        <div class="disclaimer col-sm-6 col-lg-6">
+            <p>
+                If you are interested in submitting a pull request, please remember:
+            </p>
+            <ul>
+                <li>Work on the <code>develop</code> branch</li>
+                <li>Coding style matters! Be consistent with the existing code base</li>
+                <li>Accompanying tests where needed are greatly appreciated</li>
+            </ul>
+        </div>
+        <div class="center col-sm-6 col-lg-6">
+            <img src="/images/git_i_want_you.png" />
+        </div>
+    </div>
+
+</started>

@@ -1,0 +1,43 @@
+<header class="site-header">
+    <div class="wrapper">
+        <nav class="navbar navbar-default navbar-fixed-top nav-bar-nopadding" data-spy="affix" data-offset-top="60">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.title }}</a>
+                </div>
+
+                <!-- Menu items -->
+                <div class="collapse navbar-collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        {% for menu_item in site.data.menu %}
+                        {% if menu_item.submenu %}
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                {{ menu_item.title }}
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                {% for sub_menu_item in menu_item.submenu %}
+                                <li><a href="{{ sub_menu_item.link | prepend: site.baseurl }}">{{ sub_menu_item.title }}</a></li>
+                                {% endfor %}
+                            </ul>
+                        </li>
+                        {% else %}
+                        <li><a href="{{ menu_item.link | prepend: site.baseurl }}" {% if menu_item.new_window %}target="_blank" {% endif %}>{{ menu_item.title }}</a></li>
+                        {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </div>
+
+</header>

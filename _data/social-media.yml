@@ -1,0 +1,11 @@
+- name: GitHub
+  icon: fa fa-github-alt
+  link: https://github.com/mono/CocosSharp
+
+- name: CocosSharp forum
+  icon: fa fa-commenting
+  link: https://forums.xamarin.com/categories/cocossharp
+
+- name: CocosSharp guides
+  icon: fa fa-file-text-o
+  link: https://developer.xamarin.com/guides/cross-platform/game_development/cocossharp/

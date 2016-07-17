@@ -1,0 +1,10 @@
+- title: Community
+  link: https://forums.xamarin.com/categories/cocossharp
+  new_window: true
+
+- title: Guides
+  link: https://developer.xamarin.com/guides/cross-platform/game_development/cocossharp/
+  new_window: true
+
+- title: Contribute
+  link: /contribute/

@@ -1,0 +1,88 @@
+<release_progress>
+    {% assign nfeatures = 0 %}
+    {% assign nclosed_features = 0 %}
+    {% assign nfixes = 0 %}
+    {% assign nclosed_fixes = 0 %}
+    {% assign nenvira = 0 %}
+    {% assign nclosed_envira = 0 %}
+    {% for milestone in site.data.upcoming_version.milestones %}
+        {% if milestone.type == 'Feature' %}
+             {% assign nfeatures = nfeatures | plus: 1 %}
+             {% if milestone.status == 'Closed' %}
+                {% assign nclosed_features = nclosed_features | plus: 1 %}
+             {% endif %}
+        {% endif %}
+        {% if milestone.type == 'Bug-fix' %}
+             {% assign nfixes = nfixes | plus: 1 %}
+             {% if milestone.status == 'Closed' %}
+                {% assign nclosed_fixes = nclosed_fixes | plus: 1 %}
+             {% endif %}
+        {% endif %}
+        {% if milestone.type == 'Environment' %}
+             {% assign nenvira = nenvira | plus: 1 %}
+             {% if milestone.status == 'Closed' %}
+                {% assign nclosed_envira = nclosed_envira | plus: 1 %}
+             {% endif %}
+        {% endif %}
+    {% endfor %}
+    {% assign total = nfeatures | plus: nfixes | plus: nenvira %}
+    {% assign closed = nclosed_features | plus: nclosed_fixes | plus: nclosed_envira %}
+    {% assign percent_complete = closed | times:100 | divided_by: total %}
+
+    {% if percent_complete < 50 %}
+        {% assign pie_color = 'green' %}
+        {% assign pie_background = 'white' %}
+        {% assign pie_angle = closed | times: 360 | divided_by: total | plus: 90 %}
+        {% assign pie_angle2 = 90 %}
+    {% else %}
+        {% assign pie_color = 'white' %}
+        {% assign pie_background = 'green' %}
+        {% assign pie_angle = 90 %}
+        {% assign pie_angle2 = closed | times: 360 | divided_by: total | plus: 90 %}
+    {% endif %}
+
+    <div class="wrapper">
+        <div class="row ">
+            <div class="col-lg-12">
+                <h2>Upcoming release</h2>
+            </div>
+            <div class="col-sm-2 col-lg-2">
+                <pie style="background-color: {{ pie_color }}; background-image: linear-gradient({{ pie_angle }}deg, transparent 50%, {{ pie_background }} 50%), linear-gradient({{ pie_angle2 }}deg, {{ pie_background }} 50%, transparent 50%);"></pie>
+            </div>
+            <div class="col-sm-2 col-lg-2">
+                <h1>
+                    <span class="label label-primary">
+                        {{ site.data.upcoming_version.version }}
+                    </span>
+                </h1>
+                <h3>
+                    <span class="label label-success">
+                        {{ percent_complete }}%
+                    </span>
+                </h3>
+            </div>
+            <div class="col-sm-8 col-lg-8">
+                <ul class="milestones">
+                    {% if nfeatures > 0 %}
+                    <li>
+                        <i class="fa fa-star"></i> New features
+                        <span class="count label label-pill label-default"> {{ nclosed_features }}/{{ nfeatures }}</span>
+                    </li>
+                    {% endif %}
+                    {% if nfixes > 0 %}
+                    <li>
+                        <i class="fa fa-bug"></i> Bug fixes
+                        <span class="count label label-pill label-default"> {{ nclosed_fixes }}/{{ nfixes }}</span>
+                    </li>
+                    {% endif %}
+                    {% if nfeatures > 0 %}
+                    <li>
+                        <i class="fa fa-envira"></i> Environment 
+                        <span class="count label label-pill label-default">{{ nclosed_envira }}/{{ nenvira }}</span>
+                    </li>
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</release_progress>

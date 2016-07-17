@@ -1,0 +1,10 @@
+title: CocosSharp
+description: 'Create immersive 2D games simply with C# and .NET'
+buttons:
+    - title: Download
+      icon: fa fa-download
+      link: '#getting-started'
+
+    - title: Contribute
+      icon: fa fa-github
+      link: /contribute

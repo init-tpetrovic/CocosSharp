@@ -1,0 +1,23 @@
+- title: Inspired by Cocos2d
+  description: |
+    Users of the popular <a href="http://www.cocos2d.org/">Cocos2d</a> game engine will feel right at home
+    with CocosSharp
+  image: /images/frontpage/cocos2d.png
+
+- title: Powered by MonoGame
+  description: |
+    Built upon <a href="http://www.monogame.net">MonoGame</a> &mdash; an open-source implementation of
+    the Microsoft XNA 4 Framework
+  image: /images/frontpage/monogame.png
+
+- title: Cross-platform
+  description: |
+    Use the same code base to write games for iOS, Android, WindowsPhone, Windows and macOS
+  image: /images/frontpage/devices.png
+
+- title: Open-source
+  description: |
+    Best of all, CocosSharp is a free and open-source MIT licensed project. View the 
+    <a href="https://github.com/mono/CocosSharp">code</a>
+    and start <a href="/contribute/">contributing</a> today!
+  image: /images/frontpage/box.png

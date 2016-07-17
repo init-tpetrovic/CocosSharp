@@ -1,0 +1,162 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
+@import url(https://fonts.googleapis.com/earlyaccess/notosanssc.css);
+@import url(https://fonts.googleapis.com/earlyaccess/notosansjp.css);
+html {
+    font-size: 100% !important;
+    -ms-text-size-adjust: 100% !important;
+    -webkit-text-size-adjust: 100% !important; 
+}
+
+header {
+    margin: 0 !important;
+}
+
+.site-header { 
+    border: 0 !important; 
+    padding: 0 !important; 
+    margin-top: 0 !important;
+}
+
+.nav-bar-nopadding {
+    margin-bottom: 0 !important;
+}
+
+.navbar-inverse {
+    border-color: rgb(128, 128, 128) !important;
+}
+
+.navbar-brand {
+    font-family: WeblySleek UI,Segoe UI,Helvetica Neue,Arial,sans-serif !important;
+    font-weight: lighter !important;
+    font-size: 150%;
+}
+
+
+nav.affix-top {
+    background-color: transparent !important;
+    border-bottom: none;
+    box-shadow: none;
+}
+
+nav.affix-top .navbar-collapse {
+    background-color: white !important;
+    border-bottom: 1px solid rgb(231, 231, 231);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.8);
+}
+
+nav.affix-top a {
+    color: white !important;
+}
+
+nav.affix-top .navbar-collapse a {
+    color: rgb(119, 119, 119) !important;
+}
+
+nav.affix-top .navbar-collapse a:hover {
+    background-color: transparent !important;
+    color: rgb(50, 50, 50) !important;
+}
+
+nav.affix-top a.navbar-brand:hover {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+@media (min-width:768px) {
+nav.affix-top .navbar-collapse {
+    background-color: transparent !important;
+    border-bottom: none;
+    box-shadow: none;
+}
+
+nav.affix-top .navbar-collapse a {
+    color: white !important;
+}
+
+nav.affix-top .navbar-collapse a:hover {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    color: white !important;
+}
+
+}
+
+nav.affix {
+    background-color: white;
+    border-bottom: 1px solid rgb(231, 231, 231);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+}
+
+nav.affix a {
+    color: rgb(119, 119, 119) !important;
+}
+
+nav.affix a:hover {
+    color: rgb(50, 50, 50) !important;
+}
+
+
+.fadein {
+    opacity: 0;
+}
+
+h3 {
+    color: #4a6781 !important;
+}
+
+h4 {
+    color: #4a6781 !important;
+}
+
+.btn {
+    border-radius: 0 !important;
+}
+
+.site-footer {
+    background-color: rgb(37, 51, 64);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5) inset;
+}
+
+.site-footer .social-media-list a {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 30px;
+    color: rgb(179, 179, 179) !important;
+}
+
+.site-footer a:hover {
+    color: rgb(92, 184, 92) !important;
+}
+
+.social-media-list {
+    margin-bottom: 5px !important;
+}
+
+started .wrapper {
+    margin-top: 2em;
+}
+
+
+started .steps {
+    text-align: center;
+}
+
+.number {
+    display: block;
+    width: 90px;
+    height: 90px;
+    color: white;
+    background-color: rgb(37, 51, 64);
+    border: 5px solid rgb(57, 71, 84);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding-top: 25px;
+}
+ul.milestones {
+    margin-left: 10px !important;
+}

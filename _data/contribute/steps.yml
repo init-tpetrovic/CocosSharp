@@ -1,0 +1,15 @@
+- title: Find an open issue
+  description: |
+    Milestones to be implemented in the upcoming
+    release are listed below &mdash; see if something
+    catches your eye!
+
+- title: Get assigned
+  description: |
+    Every milestone is linked to a corresponding issue on GitHub.
+    From there, let us know you're interested and we can get you assigned.
+
+- title: Submit a pull request
+  description: |
+    Fork the CocosSharp repository, implement the milestone and submit a pull
+    request. We'll review and hopefully merge the changes, making you an official CocosSharp contributor!

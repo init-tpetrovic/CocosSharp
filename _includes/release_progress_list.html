@@ -1,0 +1,75 @@
+<release_progress>
+    {% assign nfeatures = 0 %}
+    {% assign nclosed_features = 0 %}
+    {% assign nfixes = 0 %}
+    {% assign nclosed_fixes = 0 %}
+    {% assign nenvira = 0 %}
+    {% assign nclosed_envira = 0 %}
+    {% for milestone in site.data.upcoming_version.milestones %}
+        {% if milestone.type == 'Feature' %}
+             {% assign nfeatures = nfeatures | plus: 1 %}
+             {% if milestone.status == 'Closed' %}
+                {% assign nclosed_features = nclosed_features | plus: 1 %}
+             {% endif %}
+        {% endif %}
+        {% if milestone.type == 'Bug-fix' %}
+             {% assign nfixes = nfixes | plus: 1 %}
+             {% if milestone.status == 'Closed' %}
+                {% assign nclosed_fixes = nclosed_fixes | plus: 1 %}
+             {% endif %}
+        {% endif %}
+        {% if milestone.type == 'Environment' %}
+             {% assign nenvira = nenvira | plus: 1 %}
+             {% if milestone.status == 'Closed' %}
+                {% assign nclosed_envira = nclosed_envira | plus: 1 %}
+             {% endif %}
+        {% endif %}
+    {% endfor %}
+
+    <div class="milestone-list wrapper">
+        <div class="row ">
+            {% if nfeatures > 0 %}
+                <div class="issue milestones col-sm-12">
+                    <h2><i class="fa fa-star"></i> New features</h2>
+                    <ul>
+                        {% assign feature_milestones = site.data.upcoming_version.milestones | where: 'type', 'Feature' %}
+                        {% for milestone in feature_milestones %}
+                        <li>
+                            <a href="{{ milestone.link }}"><span>#{{ milestone.number }} {{ milestone.name }}</span></a>
+                            <span class="count label label-pill label-default {{ milestone.status }}">{{ milestone.status }}</span>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            {% endif %}
+            {% if nfixes > 0 %}
+            <div class="issue milestones col-sm-12">
+                <h2><i class="fa fa-bug"></i> Bug fixes</h2>
+                <ul>
+                {% assign fix_milestones = site.data.upcoming_version.milestones | where: 'type', 'Bug-fix' %}
+                {% for milestone in fix_milestones %}
+                <li>
+                    <a href="{{ milestone.link }}"><span>#{{ milestone.number }} {{ milestone.name }}</span></a>
+                    <span class="count label label-pill label-default {{ milestone.status }}">{{ milestone.status }}</span>
+                </li>
+                {% endfor %}
+                </ul>
+            </div>
+            {% endif %}
+            {% if nenvira > 0 %}
+            <div class="issue milestones col-sm-12">
+                <h2><i class="fa fa-envira"></i> Environment</h2>
+                <ul>
+                    {% assign env_milestones = site.data.upcoming_version.milestones | where: 'type', 'Environment' %}
+                    {% for milestone in env_milestones %}
+                    <li>
+                        <a href="{{ milestone.link }}"><span>#{{ milestone.number }} {{ milestone.name }}</span></a>
+                        <span class="count label label-pill label-default {{ milestone.status }}">{{ milestone.status }}</span>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</release_progress>

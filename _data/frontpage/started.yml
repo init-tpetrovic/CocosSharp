@@ -1,0 +1,17 @@
+- title: Install the templates
+  description: |
+    Our project templates for <a href="https://visualstudiogallery.msdn.microsoft.com/ab06e43a-a6f3-4b7f-a01f-52871a162ffb">
+    Visual Studio</a> and
+    <a href="https://forums.xamarin.com/discussion/26822/cocossharp-project-templates-for-xamarin-studio">
+    Xamarin Studio</a> make it easy to create new CocosSharp projects
+
+- title: Get the NuGet
+  description: |
+    For existing projects, you can manually download and install the 
+    latest CocosSharp <a href="https://www.nuget.org/packages/CocosSharp/">NuGet</a> package
+
+- title: Read our guides
+  description: |
+    Once you're up and running, our extensive collection of 
+    <a href="https://developer.xamarin.com/guides/cross-platform/game_development/cocossharp/">
+    guides</a> are a great learning resource
