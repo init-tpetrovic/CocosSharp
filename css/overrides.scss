@@ -10,7 +10,11 @@ html {
 
 @font-face {
   font-family: 'WeblySleekUISemilight';
-  src: url('/CocosSharp/css/weblysleekuisl.woff');
+  src: url('/CocosSharp/css/weblysleekuisl.eot');
+  src: url('/CocosSharp/css/weblysleekuisl.eot?#iefix') format('embedded-opentype'),
+       url('/CocosSharp/css/weblysleekuisl.woff') format('woff'),
+       url('/CocosSharp/css/weblysleekuisl.ttf') format('truetype');
+
 }
 
 header {
