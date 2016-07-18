@@ -3,8 +3,10 @@ description: 'Create immersive 2D games simply with C# and .NET'
 buttons:
     - title: Download
       icon: fa fa-download
-      link: '/#getting-started'
+      link: '#getting-started'
+      local: true
 
     - title: Contribute
       icon: fa fa-github
       link: /contribute
+      local: false
