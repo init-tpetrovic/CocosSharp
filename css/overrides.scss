@@ -2,12 +2,19 @@
 # Front matter comment to ensure Jekyll properly reads file.
 ---
 
-@import url(https://fonts.googleapis.com/earlyaccess/notosanssc.css);
-@import url(https://fonts.googleapis.com/earlyaccess/notosansjp.css);
 html {
     font-size: 100% !important;
     -ms-text-size-adjust: 100% !important;
     -webkit-text-size-adjust: 100% !important; 
+}
+
+@font-face {
+  font-family: 'WeblySleekUISemilight';
+  src: url('/css/weblysleekuisl.eot');
+  src: url('/css/weblysleekuisl.eot?#iefix') format('embedded-opentype'),
+       url('/css/weblysleekuisl.woff') format('woff'),
+       url('/css/weblysleekuisl.ttf') format('truetype'),
+       url('/css/weblysleekuisl.svg#WeblySleekUISemilight') format('svg');
 }
 
 header {
@@ -29,7 +36,7 @@ header {
 }
 
 .navbar-brand {
-    font-family: WeblySleek UI,Segoe UI,Helvetica Neue,Arial,sans-serif !important;
+    font-family: 'WeblySleekUISemilight',Segoe UI,Helvetica Neue,Arial,sans-serif !important;
     font-weight: lighter !important;
     font-size: 150%;
 }

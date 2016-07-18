@@ -27,7 +27,7 @@
 
 .banner-title {
     font-size: 300% !important;
-    font-family: WeblySleek UI,Segoe UI,Helvetica Neue,Arial,sans-serif;
+    font-family: 'WeblySleekUISemilight',Segoe UI,Helvetica Neue,Arial,sans-serif;
     font-weight: lighter;
 }
 
@@ -38,7 +38,6 @@
 @media (min-width:768px) {
 .banner-title {
     font-size: 400% !important;
-    font-family: WeblySleek UI,Segoe UI,Helvetica Neue,Arial,sans-serif;
     font-weight: lighter;
 }
 }
