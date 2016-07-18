@@ -10,11 +10,7 @@ html {
 
 @font-face {
   font-family: 'WeblySleekUISemilight';
-  src: url('/css/weblysleekuisl.eot');
-  src: url('/css/weblysleekuisl.eot?#iefix') format('embedded-opentype'),
-       url('/css/weblysleekuisl.woff') format('woff'),
-       url('/css/weblysleekuisl.ttf') format('truetype'),
-       url('/css/weblysleekuisl.svg#WeblySleekUISemilight') format('svg');
+  src: url('/css/weblysleekuisl.woff') format('woff');
 }
 
 header {
