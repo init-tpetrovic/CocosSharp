@@ -1,0 +1,180 @@
+
+- name: "Update samples"
+  number: 392
+  type: "Environment"
+  link: https://github.com/mono/CocosSharp/issues/392
+  status: Open
+
+- name: "Update templates to use MG content pipeline"
+  number: 391
+  type: "Environment"
+  link: https://github.com/mono/CocosSharp/issues/391
+  status: Open
+
+- name: "Update tests to use MG content pipeline"
+  number: 390
+  type: "Environment"
+  link: https://github.com/mono/CocosSharp/issues/390
+  status: Open
+
+- name: "Replace MonoGame submodule with NuGet"
+  number: 389
+  type: "Environment"
+  link: https://github.com/mono/CocosSharp/issues/389
+  status: Assigned
+
+- name: "Allow VS/XS project templates to share common code-base"
+  number: 388
+  type: "Environment"
+  link: https://github.com/mono/CocosSharp/issues/388
+  status: Open
+
+- name: "Incorporate continuous integration tests"
+  number: 387
+  type: "Environment"
+  link: https://github.com/mono/CocosSharp/issues/387
+  status: Assigned
+
+- name: "Tests clean-up"
+  number: 386
+  type: "Environment"
+  link: https://github.com/mono/CocosSharp/issues/386
+  status: Open
+
+- name: "Move bulk of tests to dedicated repository"
+  number: 385
+  type: "Environment"
+  link: https://github.com/mono/CocosSharp/issues/385
+  status: Assigned
+
+- name: "Smart automatic resource management"
+  number: 384
+  type: "Feature"
+  link: https://github.com/mono/CocosSharp/issues/384
+  status: Open
+
+- name: "Xaml-defined scenes"
+  number: 383
+  type: "Feature"
+  link: https://github.com/mono/CocosSharp/issues/383
+  status: Open
+
+- name: "Add cocos2d-3.x new gui support"
+  number: 382
+  type: "Feature"
+  link: https://github.com/mono/CocosSharp/issues/382
+  status: Open
+
+- name: "Full Tiled support"
+  number: 381
+  type: "Feature"
+  link: https://github.com/mono/CocosSharp/issues/381
+  status: Open
+
+- name: "Integrated Physics engine"
+  number: 380
+  type: "Feature"
+  link: https://github.com/mono/CocosSharp/issues/380
+  status: Open
+
+- name: "Multiple concurrent CCGameView support"
+  number: 379
+  type: "Feature"
+  link: https://github.com/mono/CocosSharp/issues/379
+  status: Open
+
+- name: "Remove CCDrawManager singleton"
+  number: 378
+  type: "Feature"
+  link: https://github.com/mono/CocosSharp/issues/378
+  status: Open
+
+- name: "Move particle system computation over to GPU"
+  number: 377
+  type: "Feature"
+  link: https://github.com/mono/CocosSharp/issues/377
+  status: Open
+
+- name: "Move effect computations over to GPU"
+  number: 376
+  type: "Feature"
+  link: https://github.com/mono/CocosSharp/issues/376
+  status: Open
+
+- name: "CCRenderer: Cull quads that aren't visible"
+  number: 375
+  type: "Feature"
+  link: https://github.com/mono/CocosSharp/issues/375
+  status: Open
+
+- name: "TileMap: Map size is limited when Tile size is over 64."
+  number: 368
+  type: "Bug-fix"
+  link: https://github.com/mono/CocosSharp/issues/368
+  status: Open
+
+- name: "Upgrade API to be consistent with cocos2d-x 3.x"
+  number: 354
+  type: "Feature"
+  link: https://github.com/mono/CocosSharp/issues/354
+  status: Open
+
+- name: "RunActions (CCFiniteTimeAction[]) doubles up first item"
+  number: 347
+  type: "Bug-fix"
+  link: https://github.com/mono/CocosSharp/issues/347
+  status: Open
+
+- name: "Sizing and positioning of isometric maps incorrect/inconsistent"
+  number: 342
+  type: "Bug-fix"
+  link: https://github.com/mono/CocosSharp/issues/342
+  status: Open
+
+- name: "Provide a way for games to determine how many render state changes are occurring and why"
+  number: 331
+  type: "Environment"
+  link: https://github.com/mono/CocosSharp/issues/331
+  status: Open
+
+- name: "CCGameView: Gracefully handle views with zero dimensions"
+  number: 329
+  type: "Feature"
+  link: https://github.com/mono/CocosSharp/issues/329
+  status: Open
+
+- name: "[Android Forms] Can not set Background Color of CocosSharpView"
+  number: 324
+  type: "Bug-fix"
+  link: https://github.com/mono/CocosSharp/issues/324
+  status: Open
+
+- name: "CCFade suite of actions: Allow ability to use current opacity"
+  number: 306
+  type: "Feature"
+  link: https://github.com/mono/CocosSharp/issues/306
+  status: Open
+
+- name: "Tilemaps: camera culling too aggressive when tilemaps rotate"
+  number: 274
+  type: "Bug-fix"
+  link: https://github.com/mono/CocosSharp/issues/274
+  status: Open
+
+- name: "CCNode.Children.Add is confusing as it doesn't add a child, but CCNode.AddChild does"
+  number: 212
+  type: "Feature"
+  link: https://github.com/mono/CocosSharp/issues/212
+  status: Open
+
+- name: "CCRotateTo/By: Add ability to specify pivot location"
+  number: 167
+  type: "Feature"
+  link: https://github.com/mono/CocosSharp/issues/167
+  status: Assigned
+
+- name: "Consider making the CCScene the class that is subclassed by the template rather than CCLayer"
+  number: 144
+  type: "Environment"
+  link: https://github.com/mono/CocosSharp/issues/144
+  status: Open

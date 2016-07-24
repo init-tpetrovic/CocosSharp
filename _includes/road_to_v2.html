@@ -1,6 +1,96 @@
 <started>
-    <div class="wrapper">
-        <h2>The road to v2.0</h2>
-        <h3>Details coming soon...</h3>
+    {% assign nfeatures = 0 %}
+    {% assign nclosed_features = 0 %}
+    {% assign nfixes = 0 %}
+    {% assign nclosed_fixes = 0 %}
+    {% assign nenvira = 0 %}
+    {% assign nclosed_envira = 0 %}
+    {% for milestone in site.data.contribute.roadv2 %}
+        {% if milestone.type == 'Feature' %}
+             {% assign nfeatures = nfeatures | plus: 1 %}
+             {% if milestone.status == 'Closed' %}
+                {% assign nclosed_features = nclosed_features | plus: 1 %}
+             {% endif %}
+        {% endif %}
+        {% if milestone.type == 'Bug-fix' %}
+             {% assign nfixes = nfixes | plus: 1 %}
+             {% if milestone.status == 'Closed' %}
+                {% assign nclosed_fixes = nclosed_fixes | plus: 1 %}
+             {% endif %}
+        {% endif %}
+        {% if milestone.type == 'Environment' %}
+             {% assign nenvira = nenvira | plus: 1 %}
+             {% if milestone.status == 'Closed' %}
+                {% assign nclosed_envira = nclosed_envira | plus: 1 %}
+             {% endif %}
+        {% endif %}
+    {% endfor %}
+
+    <div class="milestone-list wrapper">
+        <h1>The road to v2.0</h1>
+        <p>Below are of list of milestones that outline a road-map towards version 2.0 of CocosSharp.</p>
+        <!-- Nav tabs -->
+        <ul class="nav nav-pills center" role="tablist">
+            <li role="presentation" class="active"><a href="#feature" aria-controls="feature" role="tab" data-toggle="tab"><i class="fa fa-star"></i> Features</a></li>
+            <li role="presentation"><a href="#bug" aria-controls="bug" role="tab" data-toggle="tab"><i class="fa fa-bug"></i> Fixes</a></li>
+            <li role="presentation"><a href="#envira" aria-controls="envira" role="tab" data-toggle="tab"><i class="fa fa-envira"></i> Environment</a></li>
+        </ul>
+
+        <div class="tab-content">
+            {% if nfeatures > 0 %}
+            <div role="tabpanel" class="tab-pane fade in active" id="feature">
+                <div class="row ">
+                    <div class="issue milestones col-sm-12">
+                        <h2><i class="fa fa-star"></i> New features</h2>
+                        <ul>
+                            {% assign feature_milestones = site.data.contribute.roadv2 | where: 'type', 'Feature' %}
+                            {% for milestone in feature_milestones %}
+                            <li>
+                                <a href="{{ milestone.link }}"><span>#{{ milestone.number }} {{ milestone.name }}</span></a>
+                                <span class="count label label-pill label-default {{ milestone.status }}">{{ milestone.status }}</span>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+            {% if nfixes > 0 %}
+            <div role="tabpanel" class="tab-pane fade" id="bug">
+                <div class="row ">
+                    <div class="issue milestones col-sm-12">
+                        <h2><i class="fa fa-bug"></i> Bug fixes</h2>
+                        <ul>
+                            {% assign fix_milestones = site.data.contribute.roadv2 | where: 'type', 'Bug-fix' %}
+                            {% for milestone in fix_milestones %}
+                            <li>
+                                <a href="{{ milestone.link }}"><span>#{{ milestone.number }} {{ milestone.name }}</span></a>
+                                <span class="count label label-pill label-default {{ milestone.status }}">{{ milestone.status }}</span>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+            {% if nenvira > 0 %}
+            <div role="tabpanel" class="tab-pane fade" id="envira">
+                <div class="row ">
+                    <div class="issue milestones col-sm-12">
+                        <h2><i class="fa fa-envira"></i> Environment</h2>
+                        <ul>
+                            {% assign env_milestones = site.data.contribute.roadv2 | where: 'type', 'Environment' %}
+                            {% for milestone in env_milestones %}
+                            <li>
+                                <a href="{{ milestone.link }}"><span>#{{ milestone.number }} {{ milestone.name }}</span></a>
+                                <span class="count label label-pill label-default {{ milestone.status }}">{{ milestone.status }}</span>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+            </div>
     </div>
 </started>

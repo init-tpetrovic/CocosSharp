@@ -55,7 +55,7 @@ ul.milestones {
 }
 
 .issue span {
-    font-size: 1.3rem;
+    font-size: 1.0rem;
 }
 
 .disclaimer {
@@ -102,4 +102,19 @@ started img {
 
 .footer-list li {
     text-align: center;
+}
+
+started ul.nav {
+    text-align: center;
+    display: block !important;
+    float: none !important;
+    margin: 0 auto !important;
+    margin-bottom: 10px !important;
+}
+
+started ul.nav li {
+    text-align: center;
+    display:inline-block;
+    float: none !important;
+    margin: 0 auto !important;
 }
