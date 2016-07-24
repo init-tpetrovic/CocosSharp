@@ -71,6 +71,23 @@ nav.affix-top a.navbar-brand:hover {
     background-color: rgba(0, 0, 0, 0.5) !important;
 }
 
+nav .navbar-brand .logo {
+    margin: 0 auto;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-size: 20px;
+}
+
+nav.affix-top a.navbar-brand .logo {
+    background-image: url('/CocosSharp/images/cocossharp_white128.png');
+}
+
+nav.affix a.navbar-brand .logo {
+    background-image: url('/CocosSharp/images/cocossharp128.png');
+}
+
+
 @media (min-width:768px) {
 nav.affix-top .navbar-collapse {
     background-color: transparent !important;

@@ -2,6 +2,10 @@
     <div class="banner-container">
         <div class="jumbotron vertical-center banner-background">
             <div class="container text-center wrapper banner-wrapper">
+                <div class="logo">
+                    <img class="first" src="{{ site.data.frontpage.banner.logo | prepend: site.baseurl }}" />
+                    <img class="second" src="{{ site.data.frontpage.banner.logo_second | prepend: site.baseurl }}" />
+                </div>
                 <h1 class="banner-title">{{ site.data.frontpage.banner.title }}</h1>
                 <p>{{ site.data.frontpage.banner.description }}</p>
                 <p>

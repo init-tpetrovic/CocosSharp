@@ -1,6 +1,7 @@
 .banner-container {
     background-color: white;
     margin-top: -80px;
+    position: relative;
 }
 
 .default {
@@ -29,6 +30,41 @@
     font-size: 300% !important;
     font-family: 'WeblySleekUISemilight',Segoe UI,Helvetica Neue,Arial,sans-serif;
     font-weight: lighter;
+}
+
+.banner-container .logo {
+  position:relative;
+  height:128px;
+  width: 128px;
+  margin:0 auto;
+}
+
+.banner-container img {
+    width: 128px;
+    position:absolute;
+    left: 0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+.banner-container img.second {
+width: 132px;
+padding-left: 2px;
+animation-name: cf3FadeInOut;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 8s;
+animation-direction: alternate;
+}
+
+@keyframes cf3FadeInOut {
+  0% { opacity:1; }
+45% { opacity:1; }
+55% { opacity:0; }
+100% { opacity:0; }
+
 }
 
 .banner-container a {

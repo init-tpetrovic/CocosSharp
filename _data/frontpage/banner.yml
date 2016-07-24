@@ -1,5 +1,7 @@
 title: CocosSharp
 description: 'Create immersive 2D games simply with C# and .NET'
+logo: '/images/cocossharp_white256.png'
+logo_second: '/images/cocossharp256.png'
 buttons:
     - title: Download
       icon: fa fa-download
