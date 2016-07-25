@@ -1,49 +1,56 @@
+
 version: 'v.1.7.2'
 milestones:
-  - name: 'Change CCStats visibility'
-    number: 359
-    type: 'Bug-fix'
-    link: https://github.com/mono/CocosSharp/issues/359
-    status: Open
-
-  - name: 'Make add-in compatible with XS 6'
-    number: 362
-    type: 'Bug-fix'
-    link: https://github.com/mono/CocosSharp/issues/362
-    status: Open
-
-  - name: 'iOS templates missing wizard for Xamarin Studio'
-    number: 363
-    type: 'Bug-fix'
-    link: https://github.com/mono/CocosSharp/issues/363
-    status: Open
-
-  - name: 'CCGameView: Add UWP support'
-    number: 367
-    type: 'Feature'
-    link: https://github.com/mono/CocosSharp/issues/367
+  - name: "Add CocosSharp icon"
+    number: 374
+    type: "Feature"
+    link: https://github.com/mono/CocosSharp/issues/374
     status: Assigned
 
-  - name: 'Sanitise repository'
-    number: 370
-    type: 'Environment'
-    link: https://github.com/mono/CocosSharp/issues/370
-    status: Assigned
+  - name: "Dedicated website"
+    number: 373
+    type: "Environment"
+    link: https://github.com/mono/CocosSharp/issues/373
+    status: Closed
 
-  - name: 'CCGameView: Add Mac support'
-    number: 371
-    type: 'Feature'
-    link: https://github.com/mono/CocosSharp/issues/371
-    status: Open
-
-  - name: 'Update MonoGame dependency'
+  - name: "Update MonoGame dependency"
     number: 372
-    type: 'Environment'
+    type: "Environment"
     link: https://github.com/mono/CocosSharp/issues/372
     status: Open
 
-  - name: 'Dedicated website'
-    number: 373
-    type: 'Environment'
-    link: https://github.com/mono/CocosSharp/issues/373
+  - name: "CCGameView: Add Mac support"
+    number: 371
+    type: "Feature"
+    link: https://github.com/mono/CocosSharp/issues/371
+    status: Open
+
+  - name: "Sanitise repository"
+    number: 370
+    type: "Environment"
+    link: https://github.com/mono/CocosSharp/issues/370
+    status: Assigned
+
+  - name: "CCGameView: Add UWP support"
+    number: 367
+    type: "Feature"
+    link: https://github.com/mono/CocosSharp/issues/367
+    status: Assigned
+
+  - name: "iOS templates missing wizard for Xamarin Studio"
+    number: 363
+    type: "Bug-fix"
+    link: https://github.com/mono/CocosSharp/issues/363
+    status: Open
+
+  - name: "Make add-in compatible with XS 6"
+    number: 362
+    type: "Bug-fix"
+    link: https://github.com/mono/CocosSharp/issues/362
+    status: Open
+
+  - name: "Change CCStats visibility"
+    number: 359
+    type: "Bug-fix"
+    link: https://github.com/mono/CocosSharp/issues/359
     status: Closed
