@@ -1,6 +1,12 @@
 
 version: 'v.1.7.2'
 milestones:
+  - name: "CCStats: Remove duplicate assignment"
+    number: 393
+    type: "Bug-fix"
+    link: https://github.com/mono/CocosSharp/pull/393
+    status: Closed
+
   - name: "Add CocosSharp icon"
     number: 374
     type: "Feature"
@@ -29,7 +35,7 @@ milestones:
     number: 370
     type: "Environment"
     link: https://github.com/mono/CocosSharp/issues/370
-    status: Assigned
+    status: Closed
 
   - name: "CCGameView: Add UWP support"
     number: 367
