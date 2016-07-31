@@ -1,6 +1,12 @@
 
 version: 'v.1.7.2'
 milestones:
+  - name: "CCUserDefaults: Remove dependence on MonoGame.Storage"
+    number: 395
+    type: "Feature"
+    link: https://github.com/mono/CocosSharp/issues/395
+    status: Open
+
   - name: "CCStats: Remove duplicate assignment"
     number: 393
     type: "Bug-fix"
@@ -23,7 +29,7 @@ milestones:
     number: 372
     type: "Environment"
     link: https://github.com/mono/CocosSharp/issues/372
-    status: Open
+    status: Closed
 
   - name: "CCGameView: Add Mac support"
     number: 371
